@@ -1,4 +1,9 @@
 import React, { useRef, useState } from "react";
+import AxtraImg from "./assets/axtra.png";
+import ChatImg from "./assets/Chat app.png";
+import EnwoodImg from "./assets/enwood.png";
+import LionImg from "./assets/lion club.png";
+import TeleImg from "./assets/telemedi.png";
 
 const ProjectScreen = ({ projectRef }) => {
   const projectList = [
@@ -6,8 +11,7 @@ const ProjectScreen = ({ projectRef }) => {
       title: "Chat Messaging",
       description:
         "A cutting-edge chat messaging app crafted with Node.js, ReactJS, and WebSockets. Experience secure authentication, real-time chat, and collaborative group messaging. Immerse yourself in the seamless fusion of technology, design, and innovation, redefining the standards of modern communication platforms. ",
-      image:
-        "https://drive.google.com/uc?export=download&id=1uap3kt3hPttAl3IUXg6B2WKN7ZNUxF7E",
+      image: ChatImg,
       git: "https://github.com/MayankJha014/Chat-Messanger",
       demo: "https://chat-messanger-front.vercel.app/",
     },
@@ -15,8 +19,7 @@ const ProjectScreen = ({ projectRef }) => {
       title: "AXTRA UI Clone",
       description:
         "Elevate your Next.js UI with a dynamic blend of animations! This innovative interface boasts a diverse array of 10+ animations, ranging from subtle fades and slides to lively bounces and spins. Engage users with seamless transitions and captivating visual effects, ensuring a memorable and immersive browsing experience.",
-      image:
-        "https://drive.google.com/uc?export=download&id=17dQbiGjidf7N7mV-qtPfx35e3PZAcIHU",
+      image: AxtraImg,
       git: "https://github.com/MayankJha014/apiero-tech",
       demo: "https://apiero-tech.vercel.app/",
     },
@@ -24,8 +27,7 @@ const ProjectScreen = ({ projectRef }) => {
       title: "Apiero Tele-HealthCare",
       description:
         "The telemedicine app connects users with licensed medical professionals via secure video calls, enabling scheduling, virtual consultations, and access to medical records. It ensures convenient, timely, and confidential healthcare services, enhancing accessibility while reducing the necessity for in-person visits.",
-      image:
-        "https://drive.google.com/uc?export=download&id=18eVd93c8vzKj80FyCqFZLpD5VeJWyiPi",
+      image: TeleImg,
       git: "",
       demo: "https://www.tele.apierotechnica.com/",
     },
@@ -33,8 +35,7 @@ const ProjectScreen = ({ projectRef }) => {
       title: "Parsippany Lions Club(CMS)",
       description:
         " The CMS, developed on React.js and Node.js, delivers an intuitive content management experience. With the dynamic combination of React.js for interactive user interfaces and Node.js for efficient backend operations, it enables streamlined content creation and management, ensuring a responsive and engaging web presence.",
-      image:
-        "https://drive.google.com/uc?export=download&id=1VsYGH6zvNqawYLVm0of6yXztApumPpbF",
+      image: LionImg,
       git: "",
       demo: "https://parsippanylionsclub.org/",
     },
@@ -42,8 +43,7 @@ const ProjectScreen = ({ projectRef }) => {
       title: "Entrepreneur-Woods",
       description:
         "Entrepreneur-Woods is a dynamic blogging site powered by Node.js, featuring an intuitive admin interface for seamless post management. Empower your entrepreneurial journey with easy backend control, allowing you to create, edit, and organize content effortlessly, enhancing your online presence and engagement.",
-      image:
-        "https://drive.google.com/uc?export=download&id=1BTDVMzWiehWESWkuHdnoeNyyqaNtgVGB",
+      image: EnwoodImg,
       git: "",
       demo: "https://entrepreneur-woods-wprw-front.vercel.app/",
     },
@@ -119,7 +119,7 @@ const ProjectComp = ({ title, image, description, git, demo }) => {
         <div class="relative m-0 overflow-hidden text-gray-700 bg-transparent rounded-none shadow-none bg-clip-border">
           <img
             src={image}
-            alt="ui/ux review check"
+            // alt="ui/ux review check"
             className="object-cover h-64 w-full"
           />
         </div>
