@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer class="rounded-t-[1rem] shadow">
       <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div class="sm:flex sm:items-center sm:justify-between">
+        <div class="flex flex-col items-center gap-4 sm:flex-row sm:items-center sm:justify-between">
           <span class="self-center text-3xl font-semibold font-robotSlab tracking-wider whitespace-nowrap dark:text-white">
             MFOLIO
           </span>
@@ -40,7 +40,7 @@ const Footer = () => {
           </ul>
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+        <span class="block text-sm text-gray-500 text-center dark:text-gray-400 ">
           © 2023 MFOLIO . All Rights Reserved.
         </span>
       </div>

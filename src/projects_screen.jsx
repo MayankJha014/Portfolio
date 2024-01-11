@@ -88,7 +88,7 @@ const ProjectScreen = ({ projectRef }) => {
           </div>
         ))}
       </div>
-      <div className="h-80 m-24 rounded-b-[3rem] font-robotSlab tracking-wide gap-2 font-semibold flex flex-col justify-center items-center text-center bg-gradient-to-r from-[#b16ceaef] via-[#FF6567] to-[#ffa34cf1]">
+      <div className="h-80 w-11/12 my-20 mx-auto sm:m-24 rounded-b-[3rem] font-robotSlab tracking-wide gap-2 font-semibold flex flex-col justify-center items-center text-center bg-gradient-to-r from-[#b16ceaef] via-[#FF6567] to-[#ffa34cf1]">
         <p className="text-white  text-5xl">Interested in</p>
         <span className="text-white text-center text-5xl">
           working with me?
