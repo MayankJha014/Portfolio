@@ -159,13 +159,9 @@ const ProjectComp = ({ title, image, description, git, demo }) => {
             } text-gray-900 bg-white border transition-all duration-500  ease-in-out border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700`}
             onMouseLeave={() => setLive()}
           >
-            {git == "" ? (
-              <>Private Repo</>
-            ) : (
-              <a href={live == 0 ? demo : git} target="_blank">
-                {live == 0 ? "Live Demo" : live == 1 ? "Git Repo" : ""}
-              </a>
-            )}
+            <a href={live == 0 ? demo : git} target="_blank">
+              {live == 0 ? "Live Demo" : live == 1 ? "Git Repo" : ""}
+            </a>
           </button>
           <p
             class={`block font-sans transition-all duration-500 delay-150 ease-in-out underline ${
